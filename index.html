@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav id="navbar">
-        <header>Technical Documentation</header>
-        <a class="nav-link" href="#Introduction">Introduction</a>
-        <a class="nav-link" href="#Getting_Started">Getting Started</a>
-        <a class="nav-link" href="#Basic_Concepts">Basic Concepts</a>
-        <a class="nav-link" href="#Advanced_Topics">Advanced Topics</a>
-        <a class="nav-link" href="#Conclusion">Conclusion</a>
+  <header id="header">
+    <a href="#"><i class='bx bxs-baguette'></i>Originality Trombones</a>
+    <nav id="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="#Pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#Feature">Feature</a></li>
+        <li><a class="nav-link" href="#How-it-works">How it works</a></li>
+      </ul>
     </nav>
-    <main id="main-doc">
-        <section id="Introduction" class="main-section">
-            <header>Introduction</header>
-            <p>Welcome to the technical documentation. This section will introduce you to the basics.</p>
-            <p>Technical documentation provides comprehensive information about the usage, features, and implementation of a system or software.</p>
-            <p>This guide will help you understand the structure and functionality of the system.</p>
-            <code>console.log('Hello, world!');</code>
-            <p>Example of a simple log statement in JavaScript.</p>
-            <p>Another paragraph in the introduction section.</p>
-        </section>
-        <section id="Getting_Started" class="main-section">
-            <header>Getting Started</header>
-            <p>In this section, we will cover the initial steps to get started with our system.</p>
-            <p>Make sure to have all prerequisites installed before proceeding.</p>
-            <code>npm install</code>
-            <p>This command will install the necessary dependencies.</p>
-            <p>Getting started with the setup process.</p>
-            <ul>
-                <li>Step 1: Install dependencies</li>
-                <li>Step 2: Configure settings</li>
-                <li>Step 3: Start the application</li>
-                <li>Step 4: Fill the application</li>
-                <li>Step 5: Submit the your form</li>
-            </ul>
-        </section>
-        <section id="Basic_Concepts" class="main-section">
-            <header>Basic Concepts</header>
-            <p>This section will introduce you to the basic concepts of our system.</p>
-            <p>Understanding the basic concepts is crucial for further development.</p>
-            <code>const x = 10;</code>
-            <p>Declaration of a constant variable in JavaScript.</p>
-            <p>Basic concepts and their importance.</p>
-        </section>
-        <section id="Advanced_Topics" class="main-section">
-            <header>Advanced Topics</header>
-            <p>Advanced topics provide deeper insights into the system.</p>
-            <p>These topics are intended for experienced users.</p>
-            <code>function advancedFunction() {}</code>
-            <p>Example of a function declaration in JavaScript.</p>
-            <p>Discussion of advanced features and their applications.</p>
-        </section>
-        <section id="Conclusion" class="main-section">
-            <header>Conclusion</header>
-            <p>This section concludes the technical documentation.</p>
-            <p>We hope this documentation was helpful.</p>
-            <code>console.log('Goodbye, world!');</code>
-            <p>Example of a log statement in JavaScript.</p>
-            <p>Summary and final thoughts.</p>
-        </section>
-    </main>
+  </header>
+  <main>
+    <h2>Hand, home-made masterpieces</h2>
+    <form>
+      <input type="email" id="email" placeholder="Enter your email" name="email" required>
+      <input type="submit" id="submit" value="Get Started">
+    </form>
+    <section id="Pricing">
+      <h1>Premium Materials</h1>
+      <article>
+        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+      </article>
+    </section>
+    <section id="Feature">
+      <h1>Fast Shipping</h1>
+      <article>
+        <p>We make sure you receive your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+      </article>
+    </section>
+    <section id="How-it-works">
+      <h1>Quality Assurance</h1>
+      <article>
+        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+      </article>
+      <h2>Watch Our Product Video</h2>
+      <iframe id="video" width="560" height="315" src="https://youtu.be/7k4ZtEMpEFI" frameborder="0" allowfullscreen></iframe>
+    </section>
+    <section>
+      <div class="container">
+        <div class="pricing">TENOR TROMBONE<p>$600</p><p>Regular rehearsal and performance.</p>
+          <button type="submit">Select</button>
+        </div>
+        <div class="pricing">VALVE TROMBONE<p>$900</p><p>Recording an album of chamber work.</p>
+          <button type="submit">Select</button>
+        </div>
+        <div class="pricing">BASIC TROMBONE<p>$1200</p><p>Hosting educational workshop for young musicians.</p>
+          <button type="submit">Select</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <address>
+      <a href="mailto:olazlemiz@gmail.com">Privacy Terms Contact</a>
+      <br>Copyright 2016, Original Trombones<br>
+    </address>
+  </footer>
 </body>
 </html>
